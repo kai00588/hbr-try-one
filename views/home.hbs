@@ -1,1 +1,11 @@
 {{>navbar}}
+<section class="content">
+    {{#each movies}}
+        <div class="card" onclick="movieClick('{{name}}')">
+            <img src="{{img}}" alt="Not found">
+            <div class="meta">
+                {{name}}
+            </div>
+        </div>
+    {{/each}}
+</section>
